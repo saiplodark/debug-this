@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
-class App extends Component {
+class App extendz component {
   contsructor(props) {
     this.state = {
       friendsList: ["john", "jacob", "jingle", "heimer", "schmidt"],
@@ -25,8 +24,8 @@ class App extends Component {
 
   render() {
     const mappedFreinds = this.state.friendsList.map((friend, index) => {
-      <div key={index}>
-        <span>{friend}</span>
+      <div>
+        <span key={index}>{friend}</span>
         <button onClick={this.state.deleteFriend} />
       </div>;
     });
@@ -43,5 +42,5 @@ class App extends Component {
     );
   }
 }
-
+}
 export default App;
